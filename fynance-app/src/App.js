@@ -5,6 +5,7 @@ import './App.css';
 import Home from './home';
 import Investee from './investee';
 import Investor from './investor';
+import Menu from './menuBar';
 
 import {
   BrowserRouter as Router,
@@ -21,21 +22,7 @@ function App() {
     
     <Router>
      <div>
-      <MenuButton />
-     
-    {/* //   <nav>
-    //     <ul>
-    //       <li>
-    //         <Link to="/">Home</Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/about">Investor</Link>
-    //       </li>
-    //       <li>
-    //         <Link to="/users">Users</Link>
-    //       </li>
-    //     </ul>
-    //   </nav> */}
+      <Menu/>
 
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
@@ -56,38 +43,5 @@ function App() {
   );
 }
 
-
-class MenuButton extends React.Component {
-  constructor () {
-    super();
-    this.state = {
-      active: false
-    }
-  }
-  
-  componentDidMount () {
-    if (this.props.active) {
-      this.setState({
-        active: true
-      });
-    }
-  }
-  
-  toggle () {
-    this.setState({
-      active: !this.state.active
-    });
-  }
-  
-  render () {
-    const classes = this.state.active ? 'menu-button active' : 'menu-button';
-
-    return (
-      <button className={classes} onClick={this.toggle.bind(this)}>
-        <span className='bar'></span>
-      </button>
-    );
-  }
-}
 
 export default App;
