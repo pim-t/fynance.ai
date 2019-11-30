@@ -4,6 +4,8 @@ import './App.css';
 import DB from './Database';
 
 import Home from './home';
+import Investee from './investee';
+import Investor from './investor';
 
 import {
   BrowserRouter as Router,
@@ -15,30 +17,33 @@ import {
 function App() {
 
   return (
+    
     <Router>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/users">Users</Link>
-          </li>
-        </ul>
-      </nav>
+     <div>
+      <MenuButton />
+     
+    {/* //   <nav>
+    //     <ul>
+    //       <li>
+    //         <Link to="/">Home</Link>
+    //       </li>
+    //       <li>
+    //         <Link to="/about">Investor</Link>
+    //       </li>
+    //       <li>
+    //         <Link to="/users">Users</Link>
+    //       </li>
+    //     </ul>
+    //   </nav> */}
 
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
-        <Route path="/about">
-          <About />
+        <Route path="/investor">
+          <Investor />
         </Route>
-        <Route path="/users">
-          <Users />
+        <Route path="/investee">
+          <Investee />
         </Route>
         <Route path="/">
           <Home />
@@ -51,13 +56,37 @@ function App() {
 }
 
 
+class MenuButton extends React.Component {
+  constructor () {
+    super();
+    this.state = {
+      active: false
+    }
+  }
+  
+  componentDidMount () {
+    if (this.props.active) {
+      this.setState({
+        active: true
+      });
+    }
+  }
+  
+  toggle () {
+    this.setState({
+      active: !this.state.active
+    });
+  }
+  
+  render () {
+    const classes = this.state.active ? 'menu-button active' : 'menu-button';
 
-function About() {
-  return <h2>Investor</h2>;
-}
-
-function Users() {
-  return <h2>Investee</h2>;
+    return (
+      <button className={classes} onClick={this.toggle.bind(this)}>
+        <span className='bar'></span>
+      </button>
+    );
+  }
 }
 
 export default App;

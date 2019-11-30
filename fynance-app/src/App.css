@@ -34,3 +34,82 @@
   background-color: #ccc;
   border-radius: 3px;
 }
+
+
+/* Menu */
+
+.menu-button {
+  background-color: #2A2A2C;
+  border-radius: 0px;
+  border: none;
+  color: #FFF;
+  height: 48px;
+  margin: 0px;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0px;
+  width: 48px;
+  align-self: center;
+  transition: all 0.3s;
+  
+  &:hover, 
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.menu-button.active {
+
+  > .bar {
+    background-color: transparent;
+    transition: .2s;
+  }
+  > .bar:before {
+    transform: rotate(45deg) translate(4px, 9px);
+    transition: .3s;
+    width: 28px;
+    left: 1px;
+  }
+  > .bar:after {
+    transform: rotate(-45deg) translate(3px, -7px);
+    transition: .3s;
+    width: 28px;
+    left: 1px;
+  }
+}
+
+.bar {
+  background-color: #FFF;
+  width: 24px;
+  height: 3px;
+  margin: 4px auto;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  background-color: #FFF;
+  border-radius: 3px;
+  width: 24px;
+  height: 3px;
+  margin: 4px auto;
+  position: absolute;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.bar:before {
+  top: -12px;
+  left: 0px;
+}
+
+.bar:after {
+  bottom: -12px;
+  left: 0px;
+}
