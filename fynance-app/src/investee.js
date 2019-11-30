@@ -60,19 +60,30 @@ function Investee() {
                   NAME - GET FROM FIREBASE
                 </h1>
                 <Typography variant="body2" gutterBottom>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  
+                Monash University <br/>
+Master of Engineering <br/>
+$20,000 <br/>
+Predicted ROI: Medium (4-7%) <br/>
+
+Bio: Chris is an aspiring mechatronic engineer looking to work in human-robot interaction. A strong communicator with a passion for social justice, he is passionate and driven. Yuzuru is an avid competitive ice-skater and loves food.
+
+Past Experience: <br/>
+Prior work for longer than 6 Months: No  <br/>
+Prior qualification: Bachelor of Science <br/>
+Volunteering experience: Yes
                 </Typography>
                 {/* <Typography variant="body2" color="textSecondary">
                 </Typography> */}
               </Grid>
               <Grid item>
                 <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Remove
+
                 </Typography>
               </Grid>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle1">$19.00</Typography>
+              <Typography variant="subtitle1">19.00 per month</Typography>
             </Grid>
           </Grid>
         </Grid>

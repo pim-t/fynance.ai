@@ -41,7 +41,7 @@ export default function FullWidthGrid() {
           book
 </Icon></div>
 <h1>Support Students in Need</h1>
-<div style={{padding: 30 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div style={{padding: 30 }}>As an investor, give back by helping future leader through their studies and into the workforce. 78% of students experience financial stress, many falling between the cracks of Australia’s financial aid schemes. Investments help students focus on achieving their potential by minimising the financial stresses of paying for living and university expenses while pursuing studies in their chosen field.
 </div>
 </Paper>
         </Grid>
@@ -49,14 +49,14 @@ export default function FullWidthGrid() {
           <Paper className={classes.paper}> <div><br/><Icon className={classes.iconHover} color="grey" style={{ fontSize: 50 }}>
           timeline</Icon></div>
 <h1>High Returns</h1>
-<div style={{padding: 30 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div style={{padding: 30 }}>With returns better than that of many traditional investments, InvestInMe is an opportunity to benefit while doing social good. As postgraduates are eager to start earning money and climb the social ladder, there is uncapped potential for return with the defined terms of the investment. <br/><br/>
 </div></Paper>
         </Grid>
         <Grid item xs={4}>
           <Paper className={classes.paper}><div><br/><Icon className={classes.iconHover} color="grey" style={{ fontSize: 50 }}>
           assignment</Icon></div>
 <h1>De-Risk</h1>
-<div style={{padding: 30 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div style={{padding: 30 }}>InvestInMe uses machine learning and neural networks to quantify potential return on investment by aggregating public data and salary trends with student profiles. InvestInMe also suggests students with similarities to the investor such as university alumni or profession, helping the investor to gain greater understanding of the opportunity.
 </div></Paper>
         </Grid>
         </Grid>

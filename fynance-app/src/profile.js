@@ -7,6 +7,10 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Avatar from './avatar';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
+import yuzuHan from './images/yuzu.jpg';
+import Zendaya from './images/zendaya.jpg';
+import Alysa from './images/alysa.png';
+import Avatar2 from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -16,6 +20,10 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+  },
+  bigAvatar: {
+    width: '100%',
+    height: '100%',
   },
 }));
 
@@ -31,7 +39,10 @@ export default function NestedGrid() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <Avatar/>
+            <div className={classes.root}>
+      <Avatar2 alt="Yuzuru" src={yuzuHan} style={{width: '72%',
+    height: '72%',}} />
+    </div>
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
@@ -39,9 +50,10 @@ export default function NestedGrid() {
               <Grid item xs>
                 <h1>Yuzuru Hanyu</h1>
                 <Typography variant="body2" gutterBottom>
-                  Monash University <br/> 
-                  Entrepreneur in training! <br/> 
-                  Return in Investment: 5% 
+                Monash University <br/> 
+                Master of Engineering <br/> 
+                $20,000 <br/> 
+                Predicted ROI: Medium (4-7%)
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                   <Icon> alarm-off  </Icon> <Icon> assessment </Icon> 
@@ -67,17 +79,21 @@ export default function NestedGrid() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <Avatar/>
+            <div className={classes.root}>
+      <Avatar2 alt="Zendaya" src={Zendaya} className={classes.bigAvatar} style={{width: '50%',
+    height: '50%',}}  />
+    </div>
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <h1>Shoma Uno</h1>
+                <h1>Zendaya</h1>
                 <Typography variant="body2" gutterBottom>
-                  Unvirsity of Melbourne <br/> 
-                  Looking to complete my MBA <br/> 
-                  Return in Investment: 5%
+                University of Melbourne <br/>
+Master of Business Administration (MBA) <br/>
+$50,000 <br/>
+Predicted ROI: High (>7%) <br/>
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                 <Icon> alarm-off  </Icon> <Icon> assessment </Icon> 
@@ -103,18 +119,20 @@ export default function NestedGrid() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <Avatar/>
+            <Avatar2 alt="Alysa" src={Alysa} className={classes.bigAvatar} style={{width: '40%',
+    height: '40%',}}  />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <h1>Evgenia Medvedeva</h1> 
+                <h1>Alyssa Foley</h1> 
 
                 <Typography variant="body2" gutterBottom>
-                  RMIT <br/> 
-                  Taking it one day at a time <br/> 
-                  Return in Investment: 5%
+                RMIT <br/>
+Juris Doctor Law <br/>
+$10,000 <br/>
+Predicted ROI: High (>7%)
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                  
