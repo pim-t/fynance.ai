@@ -31,7 +31,7 @@ export default function FullWidthGrid() {
 
   return (
     
-    <div className={classes.root}>
+    <div className={classes.root, "fade_in"}>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       <br/><br/>
       <Grid container spacing={3}>
