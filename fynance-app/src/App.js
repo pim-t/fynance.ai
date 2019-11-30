@@ -7,6 +7,7 @@ import Home from './home';
 import Investee from './investee';
 import Investor from './investor';
 import Menu from './menuBar';
+import { red } from '@material-ui/core/colors';
 
 import {
   BrowserRouter as Router,

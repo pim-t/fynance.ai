@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Button from '@material-ui/core/Button';
-import Footer from './StickyFooter';
 import landingPage from './images/landingPageImage.png'; 
+
 
 import {
   BrowserRouter as Router,
@@ -29,7 +28,7 @@ function Home() {
             position: 'absolute', left: '55%', top: '75%',
             transform: 'translate(-50%, -50%)'}} >
         <Link to="/investee"><Button size="large" variant="contained" color="primary">
-    INVESTEE 
+    STUDENT  
   </Button></Link> </div>
   <div style={{
             position: 'absolute', left: '45%', top: '75%',

@@ -4,6 +4,9 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import Avatar from './avatar';
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -28,30 +31,30 @@ export default function NestedGrid() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="/static/images/grid/complex.jpg" />
+              <Avatar/>
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                  Standard license
+                  Yuzuru Hanyu
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Full resolution 1920x1080 • JPEG
+                  Dreamt of Paradise
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
-                  ID: 1030114
+                  <Icon> alarm-off  </Icon> <Icon> assessment </Icon> 
                 </Typography>
               </Grid>
               <Grid item>
                 <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Remove
+                  
                 </Typography>
               </Grid>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle1">$19.00</Typography>
+            <Button size="small" variant="contained" color="primary"> SUPPORT </Button>
             </Grid>
           </Grid>
         </Grid>
@@ -64,30 +67,30 @@ export default function NestedGrid() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="/static/images/grid/complex.jpg" />
+              <Avatar/>
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                  Standard license
+                  Shoma Uno
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Full resolution 1920x1080 • JPEG
+                  Viva la Vida 
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
-                  ID: 1030114
+                <Icon> alarm-off  </Icon> <Icon> assessment </Icon> 
                 </Typography>
               </Grid>
               <Grid item>
                 <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Remove
+                  
                 </Typography>
               </Grid>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle1">$19.00</Typography>
+            <Button size="small" variant="contained" color="primary"> SUPPORT </Button>
             </Grid>
           </Grid>
         </Grid>
@@ -100,30 +103,30 @@ export default function NestedGrid() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="/static/images/grid/complex.jpg" />
+              <Avatar/>
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                  Standard license
+                  Evgenia Medvedeva
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  Full resolution 1920x1080 • JPEG
+                  Life in Technicolor
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
-                  ID: 1030114
+                 
                 </Typography>
               </Grid>
               <Grid item>
                 <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Remove
+                <Icon> alarm-off  </Icon> <Icon> assessment </Icon> 
                 </Typography>
               </Grid>
             </Grid>
             <Grid item>
-              <Typography variant="subtitle1">$19.00</Typography>
+            <Button size="small" variant="contained" color="primary"> SUPPORT </Button>
             </Grid>
           </Grid>
         </Grid>
