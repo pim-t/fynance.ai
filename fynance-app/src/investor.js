@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Button from '@material-ui/core/Button';
-import Footer from './StickyFooter'; 
 import Grid from './gridsplash'; 
+import Profile from './profile';  
 
 function Investor() {
-  return <Grid/>;
+  return (<div><Grid/> <br/> 
+
+  <center><h1>Student Profiles </h1></center>
+  
+  <Profile/> </div>);
 }
 
 export default Investor;
