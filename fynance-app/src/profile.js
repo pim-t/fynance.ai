@@ -37,11 +37,11 @@ export default function NestedGrid() {
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <Typography gutterBottom variant="subtitle1">
-                  Yuzuru Hanyu
-                </Typography>
+                <h1>Yuzuru Hanyu</h1>
                 <Typography variant="body2" gutterBottom>
-                  Dreamt of Paradise
+                  Monash University <br/> 
+                  Entrepreneur in training! <br/> 
+                  Return in Investment: 5% 
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                   <Icon> alarm-off  </Icon> <Icon> assessment </Icon> 
@@ -73,11 +73,11 @@ export default function NestedGrid() {
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <Typography gutterBottom variant="subtitle1">
-                  Shoma Uno
-                </Typography>
+                <h1>Shoma Uno</h1>
                 <Typography variant="body2" gutterBottom>
-                  Viva la Vida 
+                  Unvirsity of Melbourne <br/> 
+                  Looking to complete my MBA <br/> 
+                  Return in Investment: 5%
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                 <Icon> alarm-off  </Icon> <Icon> assessment </Icon> 
@@ -109,11 +109,12 @@ export default function NestedGrid() {
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <Typography gutterBottom variant="subtitle1">
-                  Evgenia Medvedeva
-                </Typography>
+                <h1>Evgenia Medvedeva</h1> 
+
                 <Typography variant="body2" gutterBottom>
-                  Life in Technicolor
+                  RMIT <br/> 
+                  Taking it one day at a time <br/> 
+                  Return in Investment: 5%
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
                  
@@ -140,9 +141,6 @@ export default function NestedGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={1}>
-        <Grid container item xs={12} spacing={3}>
-          <FormRow />
-        </Grid>
         <Grid container item xs={12} spacing={3}>
           <FormRow />
         </Grid>

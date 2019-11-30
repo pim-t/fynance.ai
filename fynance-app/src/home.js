@@ -19,7 +19,8 @@ function Home() {
       color: "#ffffff",
       transform: 'translate(-50%, -50%)', fontSize: 50}} >
       <div className="fade_in">
-        Investments that power future leaders 
+        Investments that power future leaders  <br/><br/> 
+        <center> I am a </center>
         </div>
   </div>
   {/* <div class="fade-in" > Investments that power future leaders </div> */}
