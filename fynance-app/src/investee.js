@@ -37,7 +37,7 @@ function Investee() {
     const classes = useStyles();
     // define a user ID here, get data from firebase, input and add additional headers/bodies
     // Ask how to get async data - await?
-    // DB.read("investee", "demo")
+    // DB.read("investee", "demo")  
 
     // var user = await DB.read("investee", "demo");
 
@@ -70,9 +70,6 @@ function Investee() {
                   Remove
                 </Typography>
               </Grid>
-            </Grid>
-            <Grid item>
-              <Typography variant="subtitle1">$19.00</Typography>
             </Grid>
           </Grid>
         </Grid>
