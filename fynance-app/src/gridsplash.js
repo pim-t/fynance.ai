@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-// import investImage from './images/adult-blur-boss-business-288477_2.jpg'; 
+//import investImage from './images/adult-blur-boss-business-288477_2.jpg'; 
 // import studentImage from './images/woman-sitting-on-gray-chair-1543895_2.jpg'; 
 import Button from '@material-ui/core/Button';
 
