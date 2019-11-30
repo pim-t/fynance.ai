@@ -16,15 +16,20 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.database();
 
+// Fires the query and just lmao
 function write(type, id, obj){
-  console.log("wrote a something");
+    // console.log("wrote a something");
     db.ref("users/"+type+"/"+id).set(obj);
 }
 
+// Returns the promise of the query
 function read(type, id){
-    db.ref("users/"+type+"/"+id).once('value').then(function(snapshot){
-        console.log(snapshot.toJSON());
-    })
+    return db.ref("users/"+type+"/"+id).once('value');
+}
+
+// Returns the promise of the query
+function get_query(query){
+    return db.ref(query).once('value');
 }
 
 // Demo usage for writing data to db
@@ -32,6 +37,6 @@ function read(type, id){
 // var bob = {first: "bob9", last: "builder3", id: "demo"};
 // DB.write("investor", "demo", bob)
 
-const DB = {read, write};
+const DB = {read, write, get_query};
 
 export default DB;

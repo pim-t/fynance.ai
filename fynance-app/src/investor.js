@@ -4,9 +4,10 @@ import './App.css';
 import Button from '@material-ui/core/Button';
 import Footer from './StickyFooter'; 
 import Grid from './gridsplash'; 
+import Profiles from './profiles';
 
 function Investor() {
-  return <Grid/>;
+  return (<div><Grid/> <Profiles/> </div>);
 }
 
 export default Investor;
