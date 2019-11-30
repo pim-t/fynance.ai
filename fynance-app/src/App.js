@@ -1,9 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Button from '@material-ui/core/Button';
-import Footer from './StickyFooter'; 
-import Grid from './gridsplash'; 
+
+import Home from './home';
 
 import {
   BrowserRouter as Router,
@@ -52,12 +51,7 @@ function App() {
   );
 }
 
-function Home() {
-  return ( <div> 
-   <Grid/>    
-     <Footer/>
-     </div> )
-}
+
 
 function About() {
   return <h2>Investor</h2>;
