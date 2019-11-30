@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import DB from './Database';
 
 import Home from './home';
 import Investee from './investee';
@@ -13,8 +14,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
-
 
 function App() {
 

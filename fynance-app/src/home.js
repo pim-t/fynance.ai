@@ -15,20 +15,26 @@ import {
 function Home() {
   return ( <div> <div><img alt="Investee" src={landingPage} height="auto" width="100%"/></div>
   
-  <div style={{
-            position: 'absolute', left: '50%', top: '50%',
-            transform: 'translate(-50%, -50%)', fontSize: 50}} > Investments that power future leaders </div>
+
+    <div style={{ position: 'absolute', left: '50%', top: '50%',
+      color: "#ffffff",
+      transform: 'translate(-50%, -50%)', fontSize: 50}} >
+      <div className="fade_in">
+        Investments that power future leaders 
+        </div>
+  </div>
+  {/* <div class="fade-in" > Investments that power future leaders </div> */}
   
   <div style={{
             position: 'absolute', left: '55%', top: '75%',
             transform: 'translate(-50%, -50%)'}} >
-        <Link to="/investee"><Button variant="contained" color="primary">
+        <Link to="/investee"><Button size="large" variant="contained" color="primary">
     INVESTEE 
   </Button></Link> </div>
   <div style={{
             position: 'absolute', left: '45%', top: '75%',
             transform: 'translate(-50%, -50%)'}} >
-      <Link to="/investor"><Button variant="contained" color="primary">
+      <Link to="/investor"><Button size="large" variant="contained" color="primary">
     INVESTOR 
   </Button></Link></div>  
      </div> )
