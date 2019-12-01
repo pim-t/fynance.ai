@@ -41,7 +41,7 @@ export default function FullWidthGrid() {
           book
 </Icon></div>
 <h1>Support Students in Need</h1>
-<div style={{padding: 30 }}>As an investor, give back by helping future leader through their studies and into the workforce. 78% of students experience financial stress, many falling between the cracks of Australia’s financial aid schemes. Investments help students focus on achieving their potential by minimising the financial stresses of paying for living and university expenses while pursuing studies in their chosen field.
+<div style={{padding: 30 }}>Give back by helping future leaders through their studies and into the workforce. 78% of students experience financial stress. Investments help students focus on achieving their potential by minimising the financial stresses of paying for living and university expenses while pursuing studies in their chosen field.
 </div>
 </Paper>
         </Grid>

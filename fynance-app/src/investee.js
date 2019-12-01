@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 class Investee extends React.Component{
     constructor(props){
         super(props);
-        this.state = {name: "Loading", id: "5Hs305gPE1", deg:"Loading", emp:"Loading", vol:"Loading", brack:"Loading", uni:"Loading"};
+        this.state = {name: "Loading", id: "5Hs305gPE1", deg:"Loading", emp:"Loading", vol:"Loading", brack:"Loading", uni:"Loading", bio:"Loading"};
     }
     
     componentDidMount(){
@@ -51,6 +51,7 @@ class Investee extends React.Component{
             state_copy.vol = user["Volunteering"] == "1" ? "Yes" : "No";
             state_copy.brack = user["Salary Bracket"];
             state_copy.uni = "The University of Melbourne";
+            state_copy.bio = "Chris is an aspiring mechatronic engineer looking to work in human-robot interaction. A strong communicator with a passion for social justice, he is passionate and driven. Chris is an avid competitive ice-skater and loves food."
 
             var degs = [user.B_Com, user.B_Sc, user.JD, user.M_Eng];
             var deg = "None";
@@ -95,9 +96,15 @@ class Investee extends React.Component{
                                     </h1>
                                     <ul>
                                         <li><b>University: </b>{this.state.uni}</li>
+                                        <br></br>
                                         <li><b>Degree: </b>{this.state.deg}</li>
+                                        <br></br>
                                         <li><b>Previous Employment: </b>{this.state.emp}</li>
+                                        <br></br>
                                         <li><b>Volunteering Work: </b>{this.state.vol}</li>
+                                        <br></br>
+                                        <li><b>Bio: </b>{this.state.bio}</li>
+                                        <br></br>
                                         <li><b>Estimated Salary Bracket: </b>{this.state.brack}</li>
                                     </ul>
                                     {/* <Typography variant="body2" gutterBottom>

@@ -40,8 +40,8 @@ export default function NestedGrid() {
           <Grid item>
             <ButtonBase className={classes.image}>
             <div className={classes.root}>
-      <Avatar2 alt="Yuzuru" src={yuzuHan} style={{width: '72%',
-    height: '72%',}} />
+      <Avatar2 alt="Yuzuru" src={yuzuHan} style={{width: '70%',
+    height: '70%',}} />
     </div>
             </ButtonBase>
           </Grid>
@@ -80,8 +80,8 @@ export default function NestedGrid() {
           <Grid item>
             <ButtonBase className={classes.image}>
             <div className={classes.root}>
-      <Avatar2 alt="Zendaya" src={Zendaya} className={classes.bigAvatar} style={{width: '50%',
-    height: '50%',}}  />
+      <Avatar2 alt="Zendaya" src={Zendaya} className={classes.bigAvatar} style={{width: '70%',
+    height: '70%',}}  />
     </div>
             </ButtonBase>
           </Grid>
@@ -119,8 +119,8 @@ Predicted ROI: High (>7%) <br/>
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-            <Avatar2 alt="Alysa" src={Alysa} className={classes.bigAvatar} style={{width: '40%',
-    height: '40%',}}  />
+            <Avatar2 alt="Alysa" src={Alysa} className={classes.bigAvatar} style={{width: '70%',
+    height: '70%',}}  />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
