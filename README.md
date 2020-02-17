@@ -1,5 +1,5 @@
 ### InvestInMe
-An online marketplace connecting agenl investors with student to provide financial support in return for equity in future earnings. 
+An online marketplace connecting angel investors with student to provide financial support in return for equity in future earnings. 
 # Team fynance.ai
 
 The future predictions are trained using a Neural Network.
